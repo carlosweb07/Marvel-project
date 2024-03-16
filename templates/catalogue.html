@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/catalogue.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="{% static 'imgs/marvel.png' %}" alt="">
+    <a href="/">home</a>
+    <a href="/catalogue">catalogue</a>
+  </header>
+  <main>
+    <h1>catalogo</h1>
+    <section>
+      <div>
+        <img src="{% static 'imgs/spiderman.jpeg' %}" alt="">
+        <h2>Spider Man</h2>
+      </div>
+      <div>
+        <img src="{% static 'imgs/ironman.jpeg' %}" alt="">
+        <h2>Iron Man</h2>
+      </div>
+      <div>
+        <img src="{% static 'imgs/captainamerica.jpeg' %}" alt="">
+        <h2>Capitan America</h2>
+      </div>
+      <div>
+        <img src="{% static 'imgs/thor.jpeg' %}" alt="">
+        <h2>Thor</h2>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h3>Todos los derechos reservados</h3>
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+  </footer>
+</body>
+<script src="https://kit.fontawesome.com/37e8db3e05.js" crossorigin="anonymous"></script>
+</html>
