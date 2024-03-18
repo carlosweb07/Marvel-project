@@ -1,24 +1,8 @@
+
+{% extends 'layouts/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet">
+{% block content %}
   <link rel="stylesheet" href="{% static 'css/heroe.css' %}">
-  <link rel="icon" href="{% static 'imgs/logo.jpg' %}">
-  <title>Thor</title>
-</head>
-<body>
-  <header>
-    <img class="icon" src="{% static 'imgs/marvel.png' %}" alt="">
-    <div>
-      <a class="nav-item" href="/">Home</a>
-      <a class="nav-item" href="/catalogue">Catálogo</a>
-    </div>
-  </header>
   <main>
     <section class="main-info">
       <img class="heroe" src="{% static 'imgs/thor.png' %}" alt="">
@@ -81,13 +65,4 @@
       </div>
     </section>
   </main>
-  <footer>
-    <h3>Todos los derechos reservados</h3>
-    <i class="fa-brands fa-whatsapp"></i>
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-twitter"></i>
-  </footer>
-</body>
-<script src="https://kit.fontawesome.com/37e8db3e05.js" crossorigin="anonymous"></script>
-</html>
+{% endblock %}
