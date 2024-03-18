@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/heroe.css' %}">
+  <link rel="icon" href="{% static 'imgs/logo.jpg' %}">
+  <title>Spider-man</title>
+</head>
+<body>
+  <header>
+    <img class="icon" src="{% static 'imgs/marvel.png' %}" alt="">
+    <div>
+      <a class="nav-item" href="/">Home</a>
+      <a class="nav-item" href="/catalogue">Catálogo</a>
+    </div>
+  </header>
+  <main>
+    <section class="main-info">
+      <img class="heroe" src="{% static 'imgs/spid.png' %}" alt="">
+      <div class="info">
+        <h1>Spider-man</h1>
+        <ul>
+          <li>Fecha de nacimiento: 10 de agosto de 1962</li>
+          <li>Sexo: Masculino</li>
+          <li>Estatura: 1,78 m</li>
+          <li>Peso: 67 kg</li>
+          <li>Primera aparición:  Amazing Fantasy #15 (agosto de 1962)</li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h1>Historia</h1>
+      <p>
+        Peter Parker es un adolescente como otro cualquiera. Vive con su tía May y su tío Ben, va al instituto y le encantan las clases de ciencias. Sin embargo, todo cambia el día que, durante una excursión del insituto a un laboratorio, ¡Peter es mordido por una araña radioactiva y se convierte en Spider-Man!
+      </p>
+    </section>
+    <section class="main-info stacks">
+      <div>
+        <h1>Habilidades</h1>
+        <ul>
+          <li>Fuerza</li>
+          <li>resistencia sobrehumanos</li>
+          <li>sentidos aranidos</li>
+          <li>coordinación</li>
+          <li>durabilidad</li>
+          <li>reflejos</li>
+          <li>equilibrio</li>
+        </ul>
+      </div>
+      <div>
+        <h1>Debilidades</h1>
+        <ul>
+          <li>Mary Jane</li>
+        </ul>
+      </div>
+    </section>
+    <section class="galery">
+      <h1>Galeria</h1>
+      <div class="carrusel">
+        <div class="carrusel-item">
+          <img src="{% static 'imgs/spiderman.jpg' %}" alt="">
+          <span>Spider-Man (Actuado por Tobey Maguire)</span>
+        </div>
+        <div class="carrusel-item">
+          <img src="{% static 'imgs/spiderman_comic.jpg' %}" alt="">
+          <span>Spider-Man (Comic)</span>
+        </div>
+        <div class="carrusel-item">
+          <img src="{% static 'imgs/spiderman_serie.jpg' %}" alt="">
+          <span>Spider-Man (Serie animada)</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h3>Todos los derechos reservados</h3>
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+  </footer>
+</body>
+<script src="https://kit.fontawesome.com/37e8db3e05.js" crossorigin="anonymous"></script>
+</html>

@@ -13,3 +13,9 @@ def cap_page(request):
 
 def ironman_page(request):
     return render(request, "ironman.html")
+
+def spiderman_page(request):
+    return render(request, "spider.html")
+
+def thor_page(request):
+    return render(request, "thor.html")
