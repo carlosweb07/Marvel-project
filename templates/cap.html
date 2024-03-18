@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/heroe.css' %}">
+  <link rel="icon" href="{% static 'imgs/logo.jpg' %}">
+  <title>Capitán América</title>
+</head>
+<body>
+  <header>
+    <img class="icon" src="{% static 'imgs/marvel.png' %}" alt="">
+    <div>
+      <a class="nav-item" href="/">Home</a>
+      <a class="nav-item" href="/catalogue">Catálogo</a>
+    </div>
+  </header>
+  <main>
+    <section class="main-info">
+      <img class="heroe" src="{% static 'imgs/cap.png' %}" alt="Capitan America">
+      <div class="info">
+        <h1>Capitán América</h1>
+        <ul>
+          <li>Fecha de nacimiento: 4 de julio de 1918</li>
+          <li>Sexo: Masculino</li>
+          <li>Estatura: 1,88 m</li>
+          <li>Peso: 109 kg</li>
+          <li>Primera aparición: Captain America Comics #1 (marzo de 1941)</li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h1>Historia</h1>
+      <p>
+        Steve Rogers nació durante la Depresión y creció, convirtiéndose en un joven débil en una familia pobre. Su padre murió cuando él era un niño; su madre, durante la adolescencia de Steve. Horrorizado ante un noticiario que mostraba a los nazis en Europa, Rogers intentó alistarse en el ejército. Durante mucho tiempo fue rechazo debido a cuestiones de salud, hasta que se le ofreció enlistarse al proyecto del super soldado. Luego de esto se convertiría en el Capitán América, un defensor de la paz.
+      </p>
+      <p>
+        Posteriormente y debido a muchos eventos, quedaría congelados por años, hasta que fue descubierto por los Vengadores y reingresado a la vida normal. En la nueva era el Capitán América mantuvo sus objetivos de proteger y ayudar a la gente, ahora como un miembro de los Vengadores.
+      </p>
+    </section>
+    <section class="main-info">
+      <div>
+        <h1>Habilidades</h1>
+        <ul>
+          <li>Fuerza Superhumana</li>
+          <li>Buena defensa gracias a su escudo</li>
+          <li>Agilidad en combate</li>
+        </ul>
+      </div>
+      <div>
+        <h1>Debilidades</h1>
+        <ul>
+          <li>No posee super resistencia</li>
+          <li>Sus piernas</li>
+        </ul>
+      </div>
+    </section>
+    <section class="galery">
+      <h1>Galeria</h1>
+      <div class="carrusel">
+        <div class="carrusel-item">
+          <img src="{% static 'imgs/cap_actor.jpg' %}" alt="">
+          <span>Capitán América (Actuado por Chris Evans)</span>
+        </div>
+        <div class="carrusel-item">
+          <img src="{% static 'imgs/cap_comic.jpg' %}" alt="">
+          <span>Capitán América (Comics)</span>
+        </div>
+        <div class="carrusel-item">
+          <img src="{% static 'imgs/cap_serie.jpg' %}" alt="">
+          <span>Capitán América (Serie animada)</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h3>Todos los derechos reservados</h3>
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+  </footer>
+</body>
+<script src="https://kit.fontawesome.com/37e8db3e05.js" crossorigin="anonymous"></script>
+</html>

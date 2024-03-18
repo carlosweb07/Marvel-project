@@ -4,36 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="{% static 'css/catalogue.css' %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" href="{% static 'imgs/logo.jpg' %}">
+  <title>Catálogo</title>
 </head>
 <body>
   <header>
-    <img src="{% static 'imgs/marvel.png' %}" alt="">
-    <a href="/">home</a>
-    <a href="/catalogue">catalogue</a>
+    <img class="icon" src="{% static 'imgs/marvel.png' %}" alt="">
+    <div>
+      <a class="nav-item" href="/">Home</a>
+      <a class="nav-item" href="/catalogue">Catálogo</a>
+    </div>
   </header>
   <main>
-    <h1>catalogo</h1>
+    <h1>Catálogo</h1>
     <section>
       <div>
-        <img src="{% static 'imgs/spiderman.jpeg' %}" alt="">
+        <a href="/spiderman">
+          <img src="{% static 'imgs/spiderman.jpeg' %}" alt="">
+        </a>
         <h2>Spider Man</h2>
       </div>
       <div>
-        <img src="{% static 'imgs/ironman.jpeg' %}" alt="">
-        <h2>Iron Man</h2>
+        <a href="/ironman">
+          <img src="{% static 'imgs/ironman.jpeg' %}" alt="">
+          <h2>Iron Man</h2>
+        </a>
       </div>
       <div>
-        <img src="{% static 'imgs/captainamerica.jpeg' %}" alt="">
-        <h2>Capitan America</h2>
+        <a href="/cap">
+          <img src="{% static 'imgs/captainamerica.jpeg' %}" alt="">
+          <h2>Capitan America</h2>
+        </a>
       </div>
       <div>
-        <img src="{% static 'imgs/thor.jpeg' %}" alt="">
-        <h2>Thor</h2>
+        <a href="/thor">
+          <img src="{% static 'imgs/thor.jpeg' %}" alt="">
+          <h2>Thor</h2>
+        </a>
       </div>
     </section>
   </main>
