@@ -2,22 +2,19 @@
 {% load static %}
 {% block content %}
   <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <br>
   <main class="container">
-    <section class="showcase">
-      <h2>Proyecto Marvel:</h2>
-      <p>
-        Hola a todos y bienvenidos al mejor catalago de super heroes del Mundo, en
-        donde podras ver todas y cada una de las caracteristicas de tu heroe
-        favorito, así como su historia.
-      </p>
-    </section>
-    <section>
-      <div class="slider">
-        <img src="{% static 'imgs/ironman_serie.jpg' %}" alt="" />
-        <img src="{% static 'imgs/cap_serie.jpg' %}" alt="" />
-        <img src="{% static 'imgs/thor.jpeg' %}" alt="" />
-        <img src="{% static 'imgs/spiderman.jpeg' %}" alt="" />
+    <section class="wrap">
+      <div class="wrap-texto">
+        <h1>Proyecto Marvel:</h1>
+        <p>
+          Hola a todos y bienvenidos al mejor catalago de super heroes del Mundo, en donde podras ver todas y cada una de las caracteristicas de tu heroe favorito, así como su historia.
+        </p>
+        <p>
+          Si quieres conocer más de tus heroes solo tienes que undir el boton "Catálogo" y si quieres volver debes undir el boton "Home".
+        </p>
       </div>
     </section>
   </main>
+  <br>
 {% endblock %}
