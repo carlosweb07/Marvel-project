@@ -56,7 +56,7 @@ ROOT_URLCONF = 'marvel_catalogue.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['catalogue/templates', 'users/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
