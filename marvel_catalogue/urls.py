@@ -13,7 +13,7 @@ urlpatterns = [
     path("ironman/", ironman_page),
     path("thor/", thor_page),
     path("login/", login_page),
-    path("register/", register_page),
+    path("register/", register_page)
 ]
 
 

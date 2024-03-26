@@ -1,5 +1,5 @@
 from django.db import models
-from users.models import Users
+from django.contrib.auth.models import User
 
 from .constants import SEXS
 
@@ -27,4 +27,4 @@ class Hero(models.Model):
   weeknesses        = models.ForeignKey(Weeknesses, on_delete=models.CASCADE)
   image             = models.ImageField(upload_to='catalogue/static/imgs')
   created           = models.DateTimeField(auto_now_add=True)
-  user_created      = models.ForeignKey(Users, on_delete=models.CASCADE)
+  user_created      = models.ForeignKey(User, on_delete=models.CASCADE)
