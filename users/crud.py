@@ -4,7 +4,7 @@ def create_user(new_user):
   try:
     user = User.objects.create_user(
       new_user["name"],
-      new_user["name"],
+      new_user["email"],
       new_user["password"]
     )
     user.save()

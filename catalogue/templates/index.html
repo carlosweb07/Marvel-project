@@ -1,5 +1,8 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
+{% block signin %}
+  <a class="nav-item" href="/login">Iniciar sesión</a>
+{% endblock %}
 {% block content %}
   <link rel="stylesheet" href="{% static 'css/index.css' %}">
   <br>

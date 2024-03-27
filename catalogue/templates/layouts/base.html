@@ -21,7 +21,8 @@
         <div>
             <a class="nav-item" href="/">Home</a>
             <a class="nav-item" href="/catalogue">Catálogo</a>
-            <a class="nav-item" href="/login">Iniciar sesión</a>
+            {% block signin %}
+            {% endblock %}
         </div>
     </header>
     {% block content %}
